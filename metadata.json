@@ -1,0 +1,6 @@
+{
+  "name": "JPvano",
+  "description": "A fully functional, premium, real-time social network combining the best of Instagram, TikTok, and Twitter (X) with built-in Super Admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
