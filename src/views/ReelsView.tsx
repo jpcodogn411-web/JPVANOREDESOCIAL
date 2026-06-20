@@ -398,7 +398,8 @@ export default function ReelsView({ currentUser, userProfile, onViewChange }: Re
                     >
                       @{reel.userUsername}
                     </span>
-                    {reel.userUsername === 'jpvano' && <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400/20" />}
+                    {/* Admin Verification Badge */}
+                    {(reel.userUsername === 'jpvano' || reel.userId === 'jpvanoredesocial@gmail.com' || reel.userId === 'jpcodogn411@gmail.com') && <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400/20" />}
                   </div>
 
                   {/* Caption & parsed tags */}

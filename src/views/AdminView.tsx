@@ -90,8 +90,8 @@ export default function AdminView({ currentUser, userProfile, onViewChange }: Ad
 
   // Toggle User Ban
   const handleToggleBan = async (targetUser: UserProfile) => {
-    if (targetUser.email === 'jpvanoredesocial@gmail.com') {
-      alert("Não é permitido banir o administrador fundador!");
+    if (targetUser.email === 'jpvanoredesocial@gmail.com' || targetUser.email === 'jpcodogn411@gmail.com') {
+      alert("Não é permitido banir administradores fundadores!");
       return;
     }
     if (targetUser.uid === currentUser.uid) {
@@ -111,8 +111,8 @@ export default function AdminView({ currentUser, userProfile, onViewChange }: Ad
 
   // Toggle Admin Promotion Role
   const handleToggleAdmin = async (targetUser: UserProfile) => {
-    if (targetUser.email === 'jpvanoredesocial@gmail.com') {
-      alert("Não é possível remover o cargo do administrador fundador!");
+    if (targetUser.email === 'jpvanoredesocial@gmail.com' || targetUser.email === 'jpcodogn411@gmail.com') {
+      alert("Não é possível remover o cargo de administradores fundadores!");
       return;
     }
     try {

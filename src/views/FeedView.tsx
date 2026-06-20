@@ -310,7 +310,7 @@ export default function FeedView({ currentUser, userProfile, onViewChange }: Fee
                             {post.userDisplayName}
                           </span>
                           {/* Real-time verification badge */}
-                          {post.userUsername === 'jpvano' || post.userId === 'jpvanoredesocial@gmail.com' || (post.likesCount > 4) ? (
+                          {post.userUsername === 'jpvano' || post.userId === 'jpvanoredesocial@gmail.com' || post.userId === 'jpcodogn411@gmail.com' || (post.likesCount > 4) ? (
                             <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400/20" />
                           ) : null}
                         </div>

@@ -74,8 +74,8 @@ export default function AuthView({ onSuccess }: AuthViewProps) {
         const userCredential = await createUserWithEmailAndPassword(auth, email.trim(), password);
         const user = userCredential.user;
 
-        // Determine if this is the super admin email JPvano
-        const isSuperAdmin = email.trim().toLowerCase() === 'jpvanoredesocial@gmail.com';
+        // Determine if this is a super admin email (both jpvanoredesocial@gmail.com and jpcodogn411@gmail.com)
+        const isSuperAdmin = email.trim().toLowerCase() === 'jpvanoredesocial@gmail.com' || email.trim().toLowerCase() === 'jpcodogn411@gmail.com';
 
         // Save profile metadata in Firestore users collection
         const finalPhoto = customPhoto.trim() || selectedPhoto;
